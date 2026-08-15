@@ -1,0 +1,13 @@
+data/raw/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.DS_Store
+build/
+dist/
+.coverage
+htmlcov/
+.matplotlib/
+results/demo/

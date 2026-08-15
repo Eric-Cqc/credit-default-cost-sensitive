@@ -1,0 +1,3410 @@
+{
+  "class_balance": {
+    "overall": {
+      "counts": {
+        "0": 951,
+        "1": 451
+      },
+      "n": 1402,
+      "positive_rate": 0.32168330955777463
+    },
+    "test": {
+      "counts": {
+        "0": 191,
+        "1": 90
+      },
+      "n": 281,
+      "positive_rate": 0.3202846975088968
+    },
+    "train": {
+      "counts": {
+        "0": 569,
+        "1": 271
+      },
+      "n": 840,
+      "positive_rate": 0.32261904761904764
+    },
+    "validation": {
+      "counts": {
+        "0": 191,
+        "1": 90
+      },
+      "n": 281,
+      "positive_rate": 0.3202846975088968
+    }
+  },
+  "cost_matrix": {
+    "assumption": "A missed default costs approximately five times a wrongly rejected good loan; illustrative and configurable.",
+    "cost_fn": 5.0,
+    "cost_fp": 1.0,
+    "units": "normalized expected-cost units"
+  },
+  "data_source": "configured raw CSV",
+  "feature_importances": {
+    "decision_tree": {
+      "features": [
+        {
+          "feature": "annual_inc",
+          "importance": 0.420372774764534
+        },
+        {
+          "feature": "int_rate_num",
+          "importance": 0.33297895957299123
+        },
+        {
+          "feature": "dti",
+          "importance": 0.08308255884298973
+        },
+        {
+          "feature": "pay_burden_income",
+          "importance": 0.08072950205599676
+        },
+        {
+          "feature": "revol_bal",
+          "importance": 0.05510056687240923
+        },
+        {
+          "feature": "emp_length_years",
+          "importance": 0.02773563789107899
+        },
+        {
+          "feature": "addr_region_WE",
+          "importance": 0.0
+        },
+        {
+          "feature": "emp_unknown",
+          "importance": 0.0
+        },
+        {
+          "feature": "funded_amnt",
+          "importance": 0.0
+        },
+        {
+          "feature": "installment",
+          "importance": 0.0
+        },
+        {
+          "feature": "delinq_2yrs",
+          "importance": 0.0
+        },
+        {
+          "feature": "mths_since_last_delinq",
+          "importance": 0.0
+        },
+        {
+          "feature": "open_acc",
+          "importance": 0.0
+        },
+        {
+          "feature": "total_acc",
+          "importance": 0.0
+        },
+        {
+          "feature": "credit_age",
+          "importance": 0.0
+        },
+        {
+          "feature": "has_delinq",
+          "importance": 0.0
+        },
+        {
+          "feature": "addr_region_SO",
+          "importance": 0.0
+        },
+        {
+          "feature": "term_36 months",
+          "importance": 0.0
+        },
+        {
+          "feature": "term_60 months",
+          "importance": 0.0
+        },
+        {
+          "feature": "home_ownership_MORTGAGE",
+          "importance": 0.0
+        }
+      ],
+      "importance_type": "feature_importance"
+    },
+    "logistic_regression": {
+      "features": [
+        {
+          "feature": "installment",
+          "importance": 0.7400240301050718
+        },
+        {
+          "feature": "pay_burden_income",
+          "importance": 0.5474086053294731
+        },
+        {
+          "feature": "purpose_small_business",
+          "importance": 0.5453710475028019
+        },
+        {
+          "feature": "int_rate_num",
+          "importance": 0.44763210822707544
+        },
+        {
+          "feature": "total_acc",
+          "importance": 0.33294749111262256
+        },
+        {
+          "feature": "purpose_home_improvement",
+          "importance": 0.28664726003240065
+        },
+        {
+          "feature": "dti",
+          "importance": 0.26430712370272036
+        },
+        {
+          "feature": "loan_amnt",
+          "importance": 0.2313402639339311
+        },
+        {
+          "feature": "revol_bal",
+          "importance": 0.20001933497066687
+        },
+        {
+          "feature": "funded_amnt",
+          "importance": 0.17037366702912174
+        },
+        {
+          "feature": "has_delinq",
+          "importance": 0.16602820535612378
+        },
+        {
+          "feature": "term_60 months",
+          "importance": 0.15794923151687817
+        },
+        {
+          "feature": "addr_region_WE",
+          "importance": 0.15191251306953174
+        },
+        {
+          "feature": "purpose_debt_consolidation",
+          "importance": 0.14607152023581577
+        },
+        {
+          "feature": "term_36 months",
+          "importance": 0.11803846004847852
+        },
+        {
+          "feature": "mths_since_last_delinq",
+          "importance": 0.11153482139891553
+        },
+        {
+          "feature": "open_acc",
+          "importance": 0.10674545160481468
+        },
+        {
+          "feature": "addr_region_SO",
+          "importance": 0.09537523347425529
+        },
+        {
+          "feature": "purpose_credit_card",
+          "importance": 0.09239016235417435
+        },
+        {
+          "feature": "addr_region_NE",
+          "importance": 0.08520039441723425
+        }
+      ],
+      "importance_type": "absolute_coefficient"
+    },
+    "random_forest": {
+      "features": [
+        {
+          "feature": "annual_inc",
+          "importance": 0.15700134791452627
+        },
+        {
+          "feature": "int_rate_num",
+          "importance": 0.15053467697633477
+        },
+        {
+          "feature": "pay_burden_income",
+          "importance": 0.13638463250970878
+        },
+        {
+          "feature": "dti",
+          "importance": 0.08549696225128635
+        },
+        {
+          "feature": "revol_bal",
+          "importance": 0.07725154918563852
+        },
+        {
+          "feature": "total_acc",
+          "importance": 0.07433054613873576
+        },
+        {
+          "feature": "installment",
+          "importance": 0.06051323133603882
+        },
+        {
+          "feature": "funded_amnt",
+          "importance": 0.04407264402138901
+        },
+        {
+          "feature": "loan_amnt",
+          "importance": 0.03724817750924314
+        },
+        {
+          "feature": "credit_age",
+          "importance": 0.03394701039240704
+        },
+        {
+          "feature": "open_acc",
+          "importance": 0.02682395864050461
+        },
+        {
+          "feature": "emp_length_years",
+          "importance": 0.024793198762901737
+        },
+        {
+          "feature": "mths_since_last_delinq",
+          "importance": 0.020591367976872617
+        },
+        {
+          "feature": "home_ownership_RENT",
+          "importance": 0.011466463829744311
+        },
+        {
+          "feature": "home_ownership_MORTGAGE",
+          "importance": 0.01072117005532103
+        },
+        {
+          "feature": "purpose_debt_consolidation",
+          "importance": 0.008678558495442069
+        },
+        {
+          "feature": "addr_region_WE",
+          "importance": 0.007796367200046504
+        },
+        {
+          "feature": "addr_region_SO",
+          "importance": 0.0061139460826891865
+        },
+        {
+          "feature": "has_delinq",
+          "importance": 0.005959726143560896
+        },
+        {
+          "feature": "term_60 months",
+          "importance": 0.005306040562125697
+        }
+      ],
+      "importance_type": "feature_importance"
+    },
+    "xgboost": {
+      "features": [
+        {
+          "feature": "emp_unknown",
+          "importance": 0.06256178766489029
+        },
+        {
+          "feature": "purpose_small_business",
+          "importance": 0.0521063394844532
+        },
+        {
+          "feature": "int_rate_num",
+          "importance": 0.044377390295267105
+        },
+        {
+          "feature": "annual_inc",
+          "importance": 0.04351406916975975
+        },
+        {
+          "feature": "funded_amnt",
+          "importance": 0.03778424859046936
+        },
+        {
+          "feature": "home_ownership_RENT",
+          "importance": 0.03625321388244629
+        },
+        {
+          "feature": "revol_bal",
+          "importance": 0.036070290952920914
+        },
+        {
+          "feature": "dti",
+          "importance": 0.035928353667259216
+        },
+        {
+          "feature": "pay_burden_income",
+          "importance": 0.035612720996141434
+        },
+        {
+          "feature": "home_ownership_OWN",
+          "importance": 0.035382211208343506
+        },
+        {
+          "feature": "total_acc",
+          "importance": 0.03387182578444481
+        },
+        {
+          "feature": "installment",
+          "importance": 0.03296951577067375
+        },
+        {
+          "feature": "open_acc",
+          "importance": 0.03290580213069916
+        },
+        {
+          "feature": "credit_age",
+          "importance": 0.03264595568180084
+        },
+        {
+          "feature": "home_ownership_MORTGAGE",
+          "importance": 0.0321456603705883
+        },
+        {
+          "feature": "purpose_home_improvement",
+          "importance": 0.031619783490896225
+        },
+        {
+          "feature": "mths_since_last_delinq",
+          "importance": 0.03147407993674278
+        },
+        {
+          "feature": "purpose_debt_consolidation",
+          "importance": 0.03137778863310814
+        },
+        {
+          "feature": "loan_amnt",
+          "importance": 0.031133316457271576
+        },
+        {
+          "feature": "purpose_purpose_other",
+          "importance": 0.03091363236308098
+        }
+      ],
+      "importance_type": "feature_importance"
+    }
+  },
+  "feature_names": [
+    "loan_amnt",
+    "funded_amnt",
+    "installment",
+    "annual_inc",
+    "dti",
+    "delinq_2yrs",
+    "mths_since_last_delinq",
+    "open_acc",
+    "revol_bal",
+    "total_acc",
+    "int_rate_num",
+    "credit_age",
+    "emp_length_years",
+    "emp_unknown",
+    "has_delinq",
+    "pay_burden_income",
+    "term_36 months",
+    "term_60 months",
+    "home_ownership_MORTGAGE",
+    "home_ownership_OWN",
+    "home_ownership_RENT",
+    "purpose_credit_card",
+    "purpose_debt_consolidation",
+    "purpose_home_improvement",
+    "purpose_purpose_other",
+    "purpose_small_business",
+    "addr_region_MW",
+    "addr_region_NE",
+    "addr_region_SO",
+    "addr_region_WE"
+  ],
+  "figures": [
+    "results/figures/roc_curves.png",
+    "results/figures/pr_curves.png",
+    "results/figures/selected_model_cost_curve.png",
+    "results/figures/feature_importances.png"
+  ],
+  "models": {
+    "decision_tree": {
+      "selection": {
+        "criterion": "minimum_validation_expected_cost",
+        "f1_optimal_threshold": 0.52,
+        "selected_threshold": 0.39,
+        "validation_threshold_curve": [
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.01
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.02
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.03
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.04
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.05
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.06
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.07
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.08
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.09
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.1
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.11
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.12
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.13
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.14
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.15
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.16
+          },
+          {
+            "expected_cost_per_sample": 0.6832740213523132,
+            "expected_cost_total": 192.0,
+            "f1": 0.4942528735632184,
+            "threshold": 0.17
+          },
+          {
+            "expected_cost_per_sample": 0.6832740213523132,
+            "expected_cost_total": 192.0,
+            "f1": 0.4942528735632184,
+            "threshold": 0.18
+          },
+          {
+            "expected_cost_per_sample": 0.6832740213523132,
+            "expected_cost_total": 192.0,
+            "f1": 0.4942528735632184,
+            "threshold": 0.19
+          },
+          {
+            "expected_cost_per_sample": 0.6832740213523132,
+            "expected_cost_total": 192.0,
+            "f1": 0.4942528735632184,
+            "threshold": 0.2
+          },
+          {
+            "expected_cost_per_sample": 0.6832740213523132,
+            "expected_cost_total": 192.0,
+            "f1": 0.4942528735632184,
+            "threshold": 0.21
+          },
+          {
+            "expected_cost_per_sample": 0.6832740213523132,
+            "expected_cost_total": 192.0,
+            "f1": 0.4942528735632184,
+            "threshold": 0.22
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.5014925373134328,
+            "threshold": 0.23
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.5014925373134328,
+            "threshold": 0.24
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.5014925373134328,
+            "threshold": 0.25
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.5014925373134328,
+            "threshold": 0.26
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.5014925373134328,
+            "threshold": 0.27
+          },
+          {
+            "expected_cost_per_sample": 0.6619217081850534,
+            "expected_cost_total": 186.0,
+            "f1": 0.5266666666666666,
+            "threshold": 0.28
+          },
+          {
+            "expected_cost_per_sample": 0.6619217081850534,
+            "expected_cost_total": 186.0,
+            "f1": 0.5266666666666666,
+            "threshold": 0.29
+          },
+          {
+            "expected_cost_per_sample": 0.6619217081850534,
+            "expected_cost_total": 186.0,
+            "f1": 0.5266666666666666,
+            "threshold": 0.3
+          },
+          {
+            "expected_cost_per_sample": 0.6619217081850534,
+            "expected_cost_total": 186.0,
+            "f1": 0.5266666666666666,
+            "threshold": 0.31
+          },
+          {
+            "expected_cost_per_sample": 0.6619217081850534,
+            "expected_cost_total": 186.0,
+            "f1": 0.5266666666666666,
+            "threshold": 0.32
+          },
+          {
+            "expected_cost_per_sample": 0.6619217081850534,
+            "expected_cost_total": 186.0,
+            "f1": 0.5266666666666666,
+            "threshold": 0.33
+          },
+          {
+            "expected_cost_per_sample": 0.6619217081850534,
+            "expected_cost_total": 186.0,
+            "f1": 0.5266666666666666,
+            "threshold": 0.34
+          },
+          {
+            "expected_cost_per_sample": 0.6619217081850534,
+            "expected_cost_total": 186.0,
+            "f1": 0.5266666666666666,
+            "threshold": 0.35
+          },
+          {
+            "expected_cost_per_sample": 0.6619217081850534,
+            "expected_cost_total": 186.0,
+            "f1": 0.5266666666666666,
+            "threshold": 0.36
+          },
+          {
+            "expected_cost_per_sample": 0.6619217081850534,
+            "expected_cost_total": 186.0,
+            "f1": 0.5266666666666666,
+            "threshold": 0.37
+          },
+          {
+            "expected_cost_per_sample": 0.6156583629893239,
+            "expected_cost_total": 173.0,
+            "f1": 0.5551601423487544,
+            "threshold": 0.38
+          },
+          {
+            "expected_cost_per_sample": 0.5871886120996441,
+            "expected_cost_total": 165.0,
+            "f1": 0.5823754789272031,
+            "threshold": 0.39
+          },
+          {
+            "expected_cost_per_sample": 0.5871886120996441,
+            "expected_cost_total": 165.0,
+            "f1": 0.5823754789272031,
+            "threshold": 0.4
+          },
+          {
+            "expected_cost_per_sample": 0.5871886120996441,
+            "expected_cost_total": 165.0,
+            "f1": 0.5823754789272031,
+            "threshold": 0.41
+          },
+          {
+            "expected_cost_per_sample": 0.5871886120996441,
+            "expected_cost_total": 165.0,
+            "f1": 0.5823754789272031,
+            "threshold": 0.42
+          },
+          {
+            "expected_cost_per_sample": 0.5871886120996441,
+            "expected_cost_total": 165.0,
+            "f1": 0.5823754789272031,
+            "threshold": 0.43
+          },
+          {
+            "expected_cost_per_sample": 0.5871886120996441,
+            "expected_cost_total": 165.0,
+            "f1": 0.5823754789272031,
+            "threshold": 0.44
+          },
+          {
+            "expected_cost_per_sample": 0.5871886120996441,
+            "expected_cost_total": 165.0,
+            "f1": 0.5823754789272031,
+            "threshold": 0.45
+          },
+          {
+            "expected_cost_per_sample": 0.5871886120996441,
+            "expected_cost_total": 165.0,
+            "f1": 0.5823754789272031,
+            "threshold": 0.46
+          },
+          {
+            "expected_cost_per_sample": 0.5871886120996441,
+            "expected_cost_total": 165.0,
+            "f1": 0.5823754789272031,
+            "threshold": 0.47
+          },
+          {
+            "expected_cost_per_sample": 0.5871886120996441,
+            "expected_cost_total": 165.0,
+            "f1": 0.5823754789272031,
+            "threshold": 0.48
+          },
+          {
+            "expected_cost_per_sample": 0.693950177935943,
+            "expected_cost_total": 195.0,
+            "f1": 0.5596707818930041,
+            "threshold": 0.49
+          },
+          {
+            "expected_cost_per_sample": 0.693950177935943,
+            "expected_cost_total": 195.0,
+            "f1": 0.5596707818930041,
+            "threshold": 0.5
+          },
+          {
+            "expected_cost_per_sample": 0.693950177935943,
+            "expected_cost_total": 195.0,
+            "f1": 0.5596707818930041,
+            "threshold": 0.51
+          },
+          {
+            "expected_cost_per_sample": 0.693950177935943,
+            "expected_cost_total": 195.0,
+            "f1": 0.5844748858447488,
+            "threshold": 0.52
+          },
+          {
+            "expected_cost_per_sample": 0.693950177935943,
+            "expected_cost_total": 195.0,
+            "f1": 0.5844748858447488,
+            "threshold": 0.53
+          },
+          {
+            "expected_cost_per_sample": 0.693950177935943,
+            "expected_cost_total": 195.0,
+            "f1": 0.5844748858447488,
+            "threshold": 0.54
+          },
+          {
+            "expected_cost_per_sample": 0.8149466192170819,
+            "expected_cost_total": 229.0,
+            "f1": 0.5463414634146342,
+            "threshold": 0.55
+          },
+          {
+            "expected_cost_per_sample": 0.8149466192170819,
+            "expected_cost_total": 229.0,
+            "f1": 0.5463414634146342,
+            "threshold": 0.56
+          },
+          {
+            "expected_cost_per_sample": 0.8149466192170819,
+            "expected_cost_total": 229.0,
+            "f1": 0.5463414634146342,
+            "threshold": 0.57
+          },
+          {
+            "expected_cost_per_sample": 0.8149466192170819,
+            "expected_cost_total": 229.0,
+            "f1": 0.5463414634146342,
+            "threshold": 0.58
+          },
+          {
+            "expected_cost_per_sample": 0.8149466192170819,
+            "expected_cost_total": 229.0,
+            "f1": 0.5463414634146342,
+            "threshold": 0.59
+          },
+          {
+            "expected_cost_per_sample": 0.8149466192170819,
+            "expected_cost_total": 229.0,
+            "f1": 0.5463414634146342,
+            "threshold": 0.6
+          },
+          {
+            "expected_cost_per_sample": 0.8149466192170819,
+            "expected_cost_total": 229.0,
+            "f1": 0.5463414634146342,
+            "threshold": 0.61
+          },
+          {
+            "expected_cost_per_sample": 0.99644128113879,
+            "expected_cost_total": 280.0,
+            "f1": 0.4883720930232558,
+            "threshold": 0.62
+          },
+          {
+            "expected_cost_per_sample": 0.99644128113879,
+            "expected_cost_total": 280.0,
+            "f1": 0.4883720930232558,
+            "threshold": 0.63
+          },
+          {
+            "expected_cost_per_sample": 0.99644128113879,
+            "expected_cost_total": 280.0,
+            "f1": 0.4883720930232558,
+            "threshold": 0.64
+          },
+          {
+            "expected_cost_per_sample": 0.99644128113879,
+            "expected_cost_total": 280.0,
+            "f1": 0.4883720930232558,
+            "threshold": 0.65
+          },
+          {
+            "expected_cost_per_sample": 1.3202846975088969,
+            "expected_cost_total": 371.0,
+            "f1": 0.3053435114503817,
+            "threshold": 0.66
+          },
+          {
+            "expected_cost_per_sample": 1.3202846975088969,
+            "expected_cost_total": 371.0,
+            "f1": 0.3053435114503817,
+            "threshold": 0.67
+          },
+          {
+            "expected_cost_per_sample": 1.3202846975088969,
+            "expected_cost_total": 371.0,
+            "f1": 0.3053435114503817,
+            "threshold": 0.68
+          },
+          {
+            "expected_cost_per_sample": 1.3202846975088969,
+            "expected_cost_total": 371.0,
+            "f1": 0.3053435114503817,
+            "threshold": 0.69
+          },
+          {
+            "expected_cost_per_sample": 1.3202846975088969,
+            "expected_cost_total": 371.0,
+            "f1": 0.3053435114503817,
+            "threshold": 0.7
+          },
+          {
+            "expected_cost_per_sample": 1.3202846975088969,
+            "expected_cost_total": 371.0,
+            "f1": 0.3053435114503817,
+            "threshold": 0.71
+          },
+          {
+            "expected_cost_per_sample": 1.3202846975088969,
+            "expected_cost_total": 371.0,
+            "f1": 0.3053435114503817,
+            "threshold": 0.72
+          },
+          {
+            "expected_cost_per_sample": 1.3202846975088969,
+            "expected_cost_total": 371.0,
+            "f1": 0.3053435114503817,
+            "threshold": 0.73
+          },
+          {
+            "expected_cost_per_sample": 1.3202846975088969,
+            "expected_cost_total": 371.0,
+            "f1": 0.3053435114503817,
+            "threshold": 0.74
+          },
+          {
+            "expected_cost_per_sample": 1.4590747330960854,
+            "expected_cost_total": 410.0,
+            "f1": 0.18181818181818182,
+            "threshold": 0.75
+          },
+          {
+            "expected_cost_per_sample": 1.4590747330960854,
+            "expected_cost_total": 410.0,
+            "f1": 0.18181818181818182,
+            "threshold": 0.76
+          },
+          {
+            "expected_cost_per_sample": 1.4590747330960854,
+            "expected_cost_total": 410.0,
+            "f1": 0.18181818181818182,
+            "threshold": 0.77
+          },
+          {
+            "expected_cost_per_sample": 1.4590747330960854,
+            "expected_cost_total": 410.0,
+            "f1": 0.18181818181818182,
+            "threshold": 0.78
+          },
+          {
+            "expected_cost_per_sample": 1.4590747330960854,
+            "expected_cost_total": 410.0,
+            "f1": 0.18181818181818182,
+            "threshold": 0.79
+          },
+          {
+            "expected_cost_per_sample": 1.4590747330960854,
+            "expected_cost_total": 410.0,
+            "f1": 0.18181818181818182,
+            "threshold": 0.8
+          },
+          {
+            "expected_cost_per_sample": 1.4590747330960854,
+            "expected_cost_total": 410.0,
+            "f1": 0.18181818181818182,
+            "threshold": 0.81
+          },
+          {
+            "expected_cost_per_sample": 1.4590747330960854,
+            "expected_cost_total": 410.0,
+            "f1": 0.18181818181818182,
+            "threshold": 0.82
+          },
+          {
+            "expected_cost_per_sample": 1.4590747330960854,
+            "expected_cost_total": 410.0,
+            "f1": 0.18181818181818182,
+            "threshold": 0.83
+          },
+          {
+            "expected_cost_per_sample": 1.4590747330960854,
+            "expected_cost_total": 410.0,
+            "f1": 0.18181818181818182,
+            "threshold": 0.84
+          },
+          {
+            "expected_cost_per_sample": 1.4590747330960854,
+            "expected_cost_total": 410.0,
+            "f1": 0.18181818181818182,
+            "threshold": 0.85
+          },
+          {
+            "expected_cost_per_sample": 1.4590747330960854,
+            "expected_cost_total": 410.0,
+            "f1": 0.18181818181818182,
+            "threshold": 0.86
+          },
+          {
+            "expected_cost_per_sample": 1.4590747330960854,
+            "expected_cost_total": 410.0,
+            "f1": 0.18181818181818182,
+            "threshold": 0.87
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.88
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.89
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.9
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.91
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.92
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.93
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.94
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.95
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.96
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.97
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.98
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.99
+          }
+        ]
+      },
+      "status": "ok",
+      "test": {
+        "at_validation_cost_threshold": {
+          "accuracy": 0.5765124555160143,
+          "expected_cost": {
+            "confusion_matrix": [
+              [
+                106,
+                85
+              ],
+              [
+                34,
+                56
+              ]
+            ],
+            "false_negatives": 34,
+            "false_positives": 85,
+            "per_sample": 0.9074733096085409,
+            "total": 255.0,
+            "true_negatives": 106,
+            "true_positives": 56
+          },
+          "f1": 0.48484848484848486,
+          "precision": 0.3971631205673759,
+          "recall": 0.6222222222222222,
+          "threshold": 0.39
+        },
+        "at_validation_f1_threshold": {
+          "accuracy": 0.6334519572953736,
+          "expected_cost": {
+            "confusion_matrix": [
+              [
+                134,
+                57
+              ],
+              [
+                46,
+                44
+              ]
+            ],
+            "false_negatives": 46,
+            "false_positives": 57,
+            "per_sample": 1.0213523131672597,
+            "total": 287.0,
+            "true_negatives": 134,
+            "true_positives": 44
+          },
+          "f1": 0.4607329842931937,
+          "precision": 0.43564356435643564,
+          "recall": 0.4888888888888889,
+          "threshold": 0.52
+        },
+        "pr_auc": 0.398643266064866,
+        "roc_auc": 0.5883653286794648
+      },
+      "validation": {
+        "at_f1_optimal_threshold": {
+          "accuracy": 0.6761565836298933,
+          "expected_cost": {
+            "confusion_matrix": [
+              [
+                126,
+                65
+              ],
+              [
+                26,
+                64
+              ]
+            ],
+            "false_negatives": 26,
+            "false_positives": 65,
+            "per_sample": 0.693950177935943,
+            "total": 195.0,
+            "true_negatives": 126,
+            "true_positives": 64
+          },
+          "f1": 0.5844748858447488,
+          "precision": 0.49612403100775193,
+          "recall": 0.7111111111111111,
+          "threshold": 0.52
+        },
+        "at_selected_cost_threshold": {
+          "accuracy": 0.6120996441281139,
+          "expected_cost": {
+            "confusion_matrix": [
+              [
+                96,
+                95
+              ],
+              [
+                14,
+                76
+              ]
+            ],
+            "false_negatives": 14,
+            "false_positives": 95,
+            "per_sample": 0.5871886120996441,
+            "total": 165.0,
+            "true_negatives": 96,
+            "true_positives": 76
+          },
+          "f1": 0.5823754789272031,
+          "precision": 0.4444444444444444,
+          "recall": 0.8444444444444444,
+          "threshold": 0.39
+        },
+        "pr_auc": 0.46801215470042035,
+        "roc_auc": 0.6972658522396743
+      }
+    },
+    "logistic_regression": {
+      "selection": {
+        "criterion": "minimum_validation_expected_cost",
+        "f1_optimal_threshold": 0.37,
+        "selected_threshold": 0.37,
+        "validation_threshold_curve": [
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.01
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.02
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.03
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.04
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.05
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.06
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.07
+          },
+          {
+            "expected_cost_per_sample": 0.6761565836298933,
+            "expected_cost_total": 190.0,
+            "f1": 0.4864864864864865,
+            "threshold": 0.08
+          },
+          {
+            "expected_cost_per_sample": 0.6761565836298933,
+            "expected_cost_total": 190.0,
+            "f1": 0.4864864864864865,
+            "threshold": 0.09
+          },
+          {
+            "expected_cost_per_sample": 0.6761565836298933,
+            "expected_cost_total": 190.0,
+            "f1": 0.4864864864864865,
+            "threshold": 0.1
+          },
+          {
+            "expected_cost_per_sample": 0.6761565836298933,
+            "expected_cost_total": 190.0,
+            "f1": 0.4864864864864865,
+            "threshold": 0.11
+          },
+          {
+            "expected_cost_per_sample": 0.6761565836298933,
+            "expected_cost_total": 190.0,
+            "f1": 0.4864864864864865,
+            "threshold": 0.12
+          },
+          {
+            "expected_cost_per_sample": 0.6761565836298933,
+            "expected_cost_total": 190.0,
+            "f1": 0.4864864864864865,
+            "threshold": 0.13
+          },
+          {
+            "expected_cost_per_sample": 0.6903914590747331,
+            "expected_cost_total": 194.0,
+            "f1": 0.483695652173913,
+            "threshold": 0.14
+          },
+          {
+            "expected_cost_per_sample": 0.6832740213523132,
+            "expected_cost_total": 192.0,
+            "f1": 0.48633879781420764,
+            "threshold": 0.15
+          },
+          {
+            "expected_cost_per_sample": 0.6832740213523132,
+            "expected_cost_total": 192.0,
+            "f1": 0.48633879781420764,
+            "threshold": 0.16
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.4876712328767123,
+            "threshold": 0.17
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.4876712328767123,
+            "threshold": 0.18
+          },
+          {
+            "expected_cost_per_sample": 0.6690391459074733,
+            "expected_cost_total": 188.0,
+            "f1": 0.49171270718232046,
+            "threshold": 0.19
+          },
+          {
+            "expected_cost_per_sample": 0.6690391459074733,
+            "expected_cost_total": 188.0,
+            "f1": 0.49171270718232046,
+            "threshold": 0.2
+          },
+          {
+            "expected_cost_per_sample": 0.6548042704626335,
+            "expected_cost_total": 184.0,
+            "f1": 0.4972067039106145,
+            "threshold": 0.21
+          },
+          {
+            "expected_cost_per_sample": 0.6690391459074733,
+            "expected_cost_total": 188.0,
+            "f1": 0.4943820224719101,
+            "threshold": 0.22
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.49291784702549574,
+            "threshold": 0.23
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.49291784702549574,
+            "threshold": 0.24
+          },
+          {
+            "expected_cost_per_sample": 0.6690391459074733,
+            "expected_cost_total": 188.0,
+            "f1": 0.49714285714285716,
+            "threshold": 0.25
+          },
+          {
+            "expected_cost_per_sample": 0.6725978647686833,
+            "expected_cost_total": 189.0,
+            "f1": 0.4985507246376812,
+            "threshold": 0.26
+          },
+          {
+            "expected_cost_per_sample": 0.6690391459074733,
+            "expected_cost_total": 188.0,
+            "f1": 0.5,
+            "threshold": 0.27
+          },
+          {
+            "expected_cost_per_sample": 0.6548042704626335,
+            "expected_cost_total": 184.0,
+            "f1": 0.5058823529411764,
+            "threshold": 0.28
+          },
+          {
+            "expected_cost_per_sample": 0.6619217081850534,
+            "expected_cost_total": 186.0,
+            "f1": 0.5059523809523809,
+            "threshold": 0.29
+          },
+          {
+            "expected_cost_per_sample": 0.6512455516014235,
+            "expected_cost_total": 183.0,
+            "f1": 0.5105105105105106,
+            "threshold": 0.3
+          },
+          {
+            "expected_cost_per_sample": 0.6370106761565836,
+            "expected_cost_total": 179.0,
+            "f1": 0.5167173252279635,
+            "threshold": 0.31
+          },
+          {
+            "expected_cost_per_sample": 0.6227758007117438,
+            "expected_cost_total": 175.0,
+            "f1": 0.5230769230769231,
+            "threshold": 0.32
+          },
+          {
+            "expected_cost_per_sample": 0.608540925266904,
+            "expected_cost_total": 171.0,
+            "f1": 0.5295950155763239,
+            "threshold": 0.33
+          },
+          {
+            "expected_cost_per_sample": 0.6014234875444839,
+            "expected_cost_total": 169.0,
+            "f1": 0.5329153605015674,
+            "threshold": 0.34
+          },
+          {
+            "expected_cost_per_sample": 0.597864768683274,
+            "expected_cost_total": 168.0,
+            "f1": 0.5345911949685535,
+            "threshold": 0.35
+          },
+          {
+            "expected_cost_per_sample": 0.5800711743772242,
+            "expected_cost_total": 163.0,
+            "f1": 0.5431309904153354,
+            "threshold": 0.36
+          },
+          {
+            "expected_cost_per_sample": 0.5693950177935944,
+            "expected_cost_total": 160.0,
+            "f1": 0.5483870967741935,
+            "threshold": 0.37
+          },
+          {
+            "expected_cost_per_sample": 0.594306049822064,
+            "expected_cost_total": 167.0,
+            "f1": 0.5442622950819672,
+            "threshold": 0.38
+          },
+          {
+            "expected_cost_per_sample": 0.6405693950177936,
+            "expected_cost_total": 180.0,
+            "f1": 0.5333333333333333,
+            "threshold": 0.39
+          },
+          {
+            "expected_cost_per_sample": 0.6370106761565836,
+            "expected_cost_total": 179.0,
+            "f1": 0.5392491467576792,
+            "threshold": 0.4
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.5296167247386759,
+            "threshold": 0.41
+          },
+          {
+            "expected_cost_per_sample": 0.701067615658363,
+            "expected_cost_total": 197.0,
+            "f1": 0.5266903914590747,
+            "threshold": 0.42
+          },
+          {
+            "expected_cost_per_sample": 0.7402135231316725,
+            "expected_cost_total": 208.0,
+            "f1": 0.5182481751824818,
+            "threshold": 0.43
+          },
+          {
+            "expected_cost_per_sample": 0.7686832740213523,
+            "expected_cost_total": 216.0,
+            "f1": 0.5111111111111111,
+            "threshold": 0.44
+          },
+          {
+            "expected_cost_per_sample": 0.8078291814946619,
+            "expected_cost_total": 227.0,
+            "f1": 0.5019011406844106,
+            "threshold": 0.45
+          },
+          {
+            "expected_cost_per_sample": 0.7864768683274022,
+            "expected_cost_total": 221.0,
+            "f1": 0.5136186770428015,
+            "threshold": 0.46
+          },
+          {
+            "expected_cost_per_sample": 0.7758007117437722,
+            "expected_cost_total": 218.0,
+            "f1": 0.5241935483870968,
+            "threshold": 0.47
+          },
+          {
+            "expected_cost_per_sample": 0.7935943060498221,
+            "expected_cost_total": 223.0,
+            "f1": 0.5182186234817814,
+            "threshold": 0.48
+          },
+          {
+            "expected_cost_per_sample": 0.7864768683274022,
+            "expected_cost_total": 221.0,
+            "f1": 0.5224489795918368,
+            "threshold": 0.49
+          },
+          {
+            "expected_cost_per_sample": 0.7829181494661922,
+            "expected_cost_total": 220.0,
+            "f1": 0.5294117647058824,
+            "threshold": 0.5
+          },
+          {
+            "expected_cost_per_sample": 0.8078291814946619,
+            "expected_cost_total": 227.0,
+            "f1": 0.5236051502145923,
+            "threshold": 0.51
+          },
+          {
+            "expected_cost_per_sample": 0.8042704626334519,
+            "expected_cost_total": 226.0,
+            "f1": 0.5309734513274337,
+            "threshold": 0.52
+          },
+          {
+            "expected_cost_per_sample": 0.8113879003558719,
+            "expected_cost_total": 228.0,
+            "f1": 0.5315315315315315,
+            "threshold": 0.53
+          },
+          {
+            "expected_cost_per_sample": 0.8220640569395018,
+            "expected_cost_total": 231.0,
+            "f1": 0.5296803652968036,
+            "threshold": 0.54
+          },
+          {
+            "expected_cost_per_sample": 0.8256227758007118,
+            "expected_cost_total": 232.0,
+            "f1": 0.5327102803738317,
+            "threshold": 0.55
+          },
+          {
+            "expected_cost_per_sample": 0.8327402135231317,
+            "expected_cost_total": 234.0,
+            "f1": 0.5392156862745098,
+            "threshold": 0.56
+          },
+          {
+            "expected_cost_per_sample": 0.8790035587188612,
+            "expected_cost_total": 247.0,
+            "f1": 0.5226130653266332,
+            "threshold": 0.57
+          },
+          {
+            "expected_cost_per_sample": 0.9074733096085409,
+            "expected_cost_total": 255.0,
+            "f1": 0.5128205128205128,
+            "threshold": 0.58
+          },
+          {
+            "expected_cost_per_sample": 0.9252669039145908,
+            "expected_cost_total": 260.0,
+            "f1": 0.5106382978723404,
+            "threshold": 0.59
+          },
+          {
+            "expected_cost_per_sample": 1.0,
+            "expected_cost_total": 281.0,
+            "f1": 0.48044692737430167,
+            "threshold": 0.6
+          },
+          {
+            "expected_cost_per_sample": 1.0640569395017794,
+            "expected_cost_total": 299.0,
+            "f1": 0.4508670520231214,
+            "threshold": 0.61
+          },
+          {
+            "expected_cost_per_sample": 1.1174377224199288,
+            "expected_cost_total": 314.0,
+            "f1": 0.4235294117647059,
+            "threshold": 0.62
+          },
+          {
+            "expected_cost_per_sample": 1.1245551601423487,
+            "expected_cost_total": 316.0,
+            "f1": 0.42168674698795183,
+            "threshold": 0.63
+          },
+          {
+            "expected_cost_per_sample": 1.1423487544483986,
+            "expected_cost_total": 321.0,
+            "f1": 0.41509433962264153,
+            "threshold": 0.64
+          },
+          {
+            "expected_cost_per_sample": 1.1779359430604983,
+            "expected_cost_total": 331.0,
+            "f1": 0.39490445859872614,
+            "threshold": 0.65
+          },
+          {
+            "expected_cost_per_sample": 1.199288256227758,
+            "expected_cost_total": 337.0,
+            "f1": 0.3841059602649007,
+            "threshold": 0.66
+          },
+          {
+            "expected_cost_per_sample": 1.1743772241992882,
+            "expected_cost_total": 330.0,
+            "f1": 0.4027777777777778,
+            "threshold": 0.67
+          },
+          {
+            "expected_cost_per_sample": 1.1850533807829182,
+            "expected_cost_total": 333.0,
+            "f1": 0.3971631205673759,
+            "threshold": 0.68
+          },
+          {
+            "expected_cost_per_sample": 1.1814946619217082,
+            "expected_cost_total": 332.0,
+            "f1": 0.4,
+            "threshold": 0.69
+          },
+          {
+            "expected_cost_per_sample": 1.188612099644128,
+            "expected_cost_total": 334.0,
+            "f1": 0.39705882352941174,
+            "threshold": 0.7
+          },
+          {
+            "expected_cost_per_sample": 1.199288256227758,
+            "expected_cost_total": 337.0,
+            "f1": 0.39097744360902253,
+            "threshold": 0.71
+          },
+          {
+            "expected_cost_per_sample": 1.2313167259786477,
+            "expected_cost_total": 346.0,
+            "f1": 0.36923076923076925,
+            "threshold": 0.72
+          },
+          {
+            "expected_cost_per_sample": 1.2455516014234875,
+            "expected_cost_total": 350.0,
+            "f1": 0.359375,
+            "threshold": 0.73
+          },
+          {
+            "expected_cost_per_sample": 1.2775800711743772,
+            "expected_cost_total": 359.0,
+            "f1": 0.336,
+            "threshold": 0.74
+          },
+          {
+            "expected_cost_per_sample": 1.3274021352313168,
+            "expected_cost_total": 373.0,
+            "f1": 0.2975206611570248,
+            "threshold": 0.75
+          },
+          {
+            "expected_cost_per_sample": 1.3558718861209964,
+            "expected_cost_total": 381.0,
+            "f1": 0.27350427350427353,
+            "threshold": 0.76
+          },
+          {
+            "expected_cost_per_sample": 1.387900355871886,
+            "expected_cost_total": 390.0,
+            "f1": 0.24561403508771928,
+            "threshold": 0.77
+          },
+          {
+            "expected_cost_per_sample": 1.4234875444839858,
+            "expected_cost_total": 400.0,
+            "f1": 0.21428571428571427,
+            "threshold": 0.78
+          },
+          {
+            "expected_cost_per_sample": 1.4519572953736655,
+            "expected_cost_total": 408.0,
+            "f1": 0.18518518518518517,
+            "threshold": 0.79
+          },
+          {
+            "expected_cost_per_sample": 1.501779359430605,
+            "expected_cost_total": 422.0,
+            "f1": 0.1346153846153846,
+            "threshold": 0.8
+          },
+          {
+            "expected_cost_per_sample": 1.5373665480427046,
+            "expected_cost_total": 432.0,
+            "f1": 0.09803921568627451,
+            "threshold": 0.81
+          },
+          {
+            "expected_cost_per_sample": 1.5338078291814947,
+            "expected_cost_total": 431.0,
+            "f1": 0.09900990099009901,
+            "threshold": 0.82
+          },
+          {
+            "expected_cost_per_sample": 1.5444839857651245,
+            "expected_cost_total": 434.0,
+            "f1": 0.08163265306122448,
+            "threshold": 0.83
+          },
+          {
+            "expected_cost_per_sample": 1.5622775800711743,
+            "expected_cost_total": 439.0,
+            "f1": 0.061855670103092786,
+            "threshold": 0.84
+          },
+          {
+            "expected_cost_per_sample": 1.5729537366548043,
+            "expected_cost_total": 442.0,
+            "f1": 0.0425531914893617,
+            "threshold": 0.85
+          },
+          {
+            "expected_cost_per_sample": 1.5907473309608542,
+            "expected_cost_total": 447.0,
+            "f1": 0.021505376344086023,
+            "threshold": 0.86
+          },
+          {
+            "expected_cost_per_sample": 1.6085409252669038,
+            "expected_cost_total": 452.0,
+            "f1": 0.0,
+            "threshold": 0.87
+          },
+          {
+            "expected_cost_per_sample": 1.604982206405694,
+            "expected_cost_total": 451.0,
+            "f1": 0.0,
+            "threshold": 0.88
+          },
+          {
+            "expected_cost_per_sample": 1.604982206405694,
+            "expected_cost_total": 451.0,
+            "f1": 0.0,
+            "threshold": 0.89
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.9
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.91
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.92
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.93
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.94
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.95
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.96
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.97
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.98
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.99
+          }
+        ]
+      },
+      "status": "ok",
+      "test": {
+        "at_validation_cost_threshold": {
+          "accuracy": 0.5231316725978647,
+          "expected_cost": {
+            "confusion_matrix": [
+              [
+                71,
+                120
+              ],
+              [
+                14,
+                76
+              ]
+            ],
+            "false_negatives": 14,
+            "false_positives": 120,
+            "per_sample": 0.6761565836298933,
+            "total": 190.0,
+            "true_negatives": 71,
+            "true_positives": 76
+          },
+          "f1": 0.5314685314685315,
+          "precision": 0.3877551020408163,
+          "recall": 0.8444444444444444,
+          "threshold": 0.37
+        },
+        "at_validation_f1_threshold": {
+          "accuracy": 0.5231316725978647,
+          "expected_cost": {
+            "confusion_matrix": [
+              [
+                71,
+                120
+              ],
+              [
+                14,
+                76
+              ]
+            ],
+            "false_negatives": 14,
+            "false_positives": 120,
+            "per_sample": 0.6761565836298933,
+            "total": 190.0,
+            "true_negatives": 71,
+            "true_positives": 76
+          },
+          "f1": 0.5314685314685315,
+          "precision": 0.3877551020408163,
+          "recall": 0.8444444444444444,
+          "threshold": 0.37
+        },
+        "pr_auc": 0.5225314064425477,
+        "roc_auc": 0.6760325770796975
+      },
+      "validation": {
+        "at_f1_optimal_threshold": {
+          "accuracy": 0.501779359430605,
+          "expected_cost": {
+            "confusion_matrix": [
+              [
+                56,
+                135
+              ],
+              [
+                5,
+                85
+              ]
+            ],
+            "false_negatives": 5,
+            "false_positives": 135,
+            "per_sample": 0.5693950177935944,
+            "total": 160.0,
+            "true_negatives": 56,
+            "true_positives": 85
+          },
+          "f1": 0.5483870967741935,
+          "precision": 0.38636363636363635,
+          "recall": 0.9444444444444444,
+          "threshold": 0.37
+        },
+        "at_selected_cost_threshold": {
+          "accuracy": 0.501779359430605,
+          "expected_cost": {
+            "confusion_matrix": [
+              [
+                56,
+                135
+              ],
+              [
+                5,
+                85
+              ]
+            ],
+            "false_negatives": 5,
+            "false_positives": 135,
+            "per_sample": 0.5693950177935944,
+            "total": 160.0,
+            "true_negatives": 56,
+            "true_positives": 85
+          },
+          "f1": 0.5483870967741935,
+          "precision": 0.38636363636363635,
+          "recall": 0.9444444444444444,
+          "threshold": 0.37
+        },
+        "pr_auc": 0.4712366675156727,
+        "roc_auc": 0.6776614310645724
+      }
+    },
+    "random_forest": {
+      "selection": {
+        "criterion": "minimum_validation_expected_cost",
+        "f1_optimal_threshold": 0.42,
+        "selected_threshold": 0.4,
+        "validation_threshold_curve": [
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.01
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.02
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.03
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.04
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.05
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.06
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.07
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.08
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.09
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.1
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.11
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.12
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.13
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.14
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.15
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.16
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.17
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.18
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.19
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.2
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.21
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.22
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.23
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.24
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.48517520215633425,
+            "threshold": 0.25
+          },
+          {
+            "expected_cost_per_sample": 0.6761565836298933,
+            "expected_cost_total": 190.0,
+            "f1": 0.4864864864864865,
+            "threshold": 0.26
+          },
+          {
+            "expected_cost_per_sample": 0.693950177935943,
+            "expected_cost_total": 195.0,
+            "f1": 0.4823848238482385,
+            "threshold": 0.27
+          },
+          {
+            "expected_cost_per_sample": 0.6868327402135231,
+            "expected_cost_total": 193.0,
+            "f1": 0.48501362397820164,
+            "threshold": 0.28
+          },
+          {
+            "expected_cost_per_sample": 0.6832740213523132,
+            "expected_cost_total": 192.0,
+            "f1": 0.48633879781420764,
+            "threshold": 0.29
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.4876712328767123,
+            "threshold": 0.3
+          },
+          {
+            "expected_cost_per_sample": 0.6654804270462633,
+            "expected_cost_total": 187.0,
+            "f1": 0.4930747922437673,
+            "threshold": 0.31
+          },
+          {
+            "expected_cost_per_sample": 0.6725978647686833,
+            "expected_cost_total": 189.0,
+            "f1": 0.49299719887955185,
+            "threshold": 0.32
+          },
+          {
+            "expected_cost_per_sample": 0.6690391459074733,
+            "expected_cost_total": 188.0,
+            "f1": 0.49714285714285716,
+            "threshold": 0.33
+          },
+          {
+            "expected_cost_per_sample": 0.6903914590747331,
+            "expected_cost_total": 194.0,
+            "f1": 0.4941860465116279,
+            "threshold": 0.34
+          },
+          {
+            "expected_cost_per_sample": 0.701067615658363,
+            "expected_cost_total": 197.0,
+            "f1": 0.49266862170087977,
+            "threshold": 0.35
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.5014925373134328,
+            "threshold": 0.36
+          },
+          {
+            "expected_cost_per_sample": 0.6512455516014235,
+            "expected_cost_total": 183.0,
+            "f1": 0.5137614678899083,
+            "threshold": 0.37
+          },
+          {
+            "expected_cost_per_sample": 0.6227758007117438,
+            "expected_cost_total": 175.0,
+            "f1": 0.5266457680250783,
+            "threshold": 0.38
+          },
+          {
+            "expected_cost_per_sample": 0.5871886120996441,
+            "expected_cost_total": 165.0,
+            "f1": 0.5436893203883495,
+            "threshold": 0.39
+          },
+          {
+            "expected_cost_per_sample": 0.5836298932384342,
+            "expected_cost_total": 164.0,
+            "f1": 0.5496688741721855,
+            "threshold": 0.4
+          },
+          {
+            "expected_cost_per_sample": 0.5907473309608541,
+            "expected_cost_total": 166.0,
+            "f1": 0.5503355704697986,
+            "threshold": 0.41
+          },
+          {
+            "expected_cost_per_sample": 0.6156583629893239,
+            "expected_cost_total": 173.0,
+            "f1": 0.5551601423487544,
+            "threshold": 0.42
+          },
+          {
+            "expected_cost_per_sample": 0.6512455516014235,
+            "expected_cost_total": 183.0,
+            "f1": 0.5494505494505495,
+            "threshold": 0.43
+          },
+          {
+            "expected_cost_per_sample": 0.6761565836298933,
+            "expected_cost_total": 190.0,
+            "f1": 0.5447761194029851,
+            "threshold": 0.44
+          },
+          {
+            "expected_cost_per_sample": 0.7330960854092526,
+            "expected_cost_total": 206.0,
+            "f1": 0.5354330708661418,
+            "threshold": 0.45
+          },
+          {
+            "expected_cost_per_sample": 0.7686832740213523,
+            "expected_cost_total": 216.0,
+            "f1": 0.5284552845528455,
+            "threshold": 0.46
+          },
+          {
+            "expected_cost_per_sample": 0.8113879003558719,
+            "expected_cost_total": 228.0,
+            "f1": 0.5213675213675214,
+            "threshold": 0.47
+          },
+          {
+            "expected_cost_per_sample": 0.7900355871886121,
+            "expected_cost_total": 222.0,
+            "f1": 0.5350877192982456,
+            "threshold": 0.48
+          },
+          {
+            "expected_cost_per_sample": 0.8113879003558719,
+            "expected_cost_total": 228.0,
+            "f1": 0.5315315315315315,
+            "threshold": 0.49
+          },
+          {
+            "expected_cost_per_sample": 0.8718861209964412,
+            "expected_cost_total": 245.0,
+            "f1": 0.5116279069767442,
+            "threshold": 0.5
+          },
+          {
+            "expected_cost_per_sample": 0.9074733096085409,
+            "expected_cost_total": 255.0,
+            "f1": 0.5024154589371981,
+            "threshold": 0.51
+          },
+          {
+            "expected_cost_per_sample": 0.9501779359430605,
+            "expected_cost_total": 267.0,
+            "f1": 0.49230769230769234,
+            "threshold": 0.52
+          },
+          {
+            "expected_cost_per_sample": 1.0177935943060499,
+            "expected_cost_total": 286.0,
+            "f1": 0.4631578947368421,
+            "threshold": 0.53
+          },
+          {
+            "expected_cost_per_sample": 1.0249110320284698,
+            "expected_cost_total": 288.0,
+            "f1": 0.46236559139784944,
+            "threshold": 0.54
+          },
+          {
+            "expected_cost_per_sample": 1.096085409252669,
+            "expected_cost_total": 308.0,
+            "f1": 0.4318181818181818,
+            "threshold": 0.55
+          },
+          {
+            "expected_cost_per_sample": 1.1209964412811388,
+            "expected_cost_total": 315.0,
+            "f1": 0.42105263157894735,
+            "threshold": 0.56
+          },
+          {
+            "expected_cost_per_sample": 1.1459074733096086,
+            "expected_cost_total": 322.0,
+            "f1": 0.40963855421686746,
+            "threshold": 0.57
+          },
+          {
+            "expected_cost_per_sample": 1.1352313167259787,
+            "expected_cost_total": 319.0,
+            "f1": 0.4171779141104294,
+            "threshold": 0.58
+          },
+          {
+            "expected_cost_per_sample": 1.1850533807829182,
+            "expected_cost_total": 333.0,
+            "f1": 0.389937106918239,
+            "threshold": 0.59
+          },
+          {
+            "expected_cost_per_sample": 1.2455516014234875,
+            "expected_cost_total": 350.0,
+            "f1": 0.35526315789473684,
+            "threshold": 0.6
+          },
+          {
+            "expected_cost_per_sample": 1.2526690391459074,
+            "expected_cost_total": 352.0,
+            "f1": 0.352112676056338,
+            "threshold": 0.61
+          },
+          {
+            "expected_cost_per_sample": 1.2740213523131672,
+            "expected_cost_total": 358.0,
+            "f1": 0.3382352941176471,
+            "threshold": 0.62
+          },
+          {
+            "expected_cost_per_sample": 1.3060498220640568,
+            "expected_cost_total": 367.0,
+            "f1": 0.3157894736842105,
+            "threshold": 0.63
+          },
+          {
+            "expected_cost_per_sample": 1.313167259786477,
+            "expected_cost_total": 369.0,
+            "f1": 0.31007751937984496,
+            "threshold": 0.64
+          },
+          {
+            "expected_cost_per_sample": 1.3380782918149465,
+            "expected_cost_total": 376.0,
+            "f1": 0.2903225806451613,
+            "threshold": 0.65
+          },
+          {
+            "expected_cost_per_sample": 1.3807829181494662,
+            "expected_cost_total": 388.0,
+            "f1": 0.2542372881355932,
+            "threshold": 0.66
+          },
+          {
+            "expected_cost_per_sample": 1.405693950177936,
+            "expected_cost_total": 395.0,
+            "f1": 0.23008849557522124,
+            "threshold": 0.67
+          },
+          {
+            "expected_cost_per_sample": 1.4590747330960854,
+            "expected_cost_total": 410.0,
+            "f1": 0.18181818181818182,
+            "threshold": 0.68
+          },
+          {
+            "expected_cost_per_sample": 1.4555160142348755,
+            "expected_cost_total": 409.0,
+            "f1": 0.1834862385321101,
+            "threshold": 0.69
+          },
+          {
+            "expected_cost_per_sample": 1.491103202846975,
+            "expected_cost_total": 419.0,
+            "f1": 0.14953271028037382,
+            "threshold": 0.7
+          },
+          {
+            "expected_cost_per_sample": 1.5124555160142348,
+            "expected_cost_total": 425.0,
+            "f1": 0.1188118811881188,
+            "threshold": 0.71
+          },
+          {
+            "expected_cost_per_sample": 1.5266903914590748,
+            "expected_cost_total": 429.0,
+            "f1": 0.10101010101010101,
+            "threshold": 0.72
+          },
+          {
+            "expected_cost_per_sample": 1.5409252669039146,
+            "expected_cost_total": 433.0,
+            "f1": 0.08247422680412371,
+            "threshold": 0.73
+          },
+          {
+            "expected_cost_per_sample": 1.5409252669039146,
+            "expected_cost_total": 433.0,
+            "f1": 0.08247422680412371,
+            "threshold": 0.74
+          },
+          {
+            "expected_cost_per_sample": 1.5765124555160142,
+            "expected_cost_total": 443.0,
+            "f1": 0.042105263157894736,
+            "threshold": 0.75
+          },
+          {
+            "expected_cost_per_sample": 1.594306049822064,
+            "expected_cost_total": 448.0,
+            "f1": 0.02127659574468085,
+            "threshold": 0.76
+          },
+          {
+            "expected_cost_per_sample": 1.594306049822064,
+            "expected_cost_total": 448.0,
+            "f1": 0.02127659574468085,
+            "threshold": 0.77
+          },
+          {
+            "expected_cost_per_sample": 1.5907473309608542,
+            "expected_cost_total": 447.0,
+            "f1": 0.021505376344086023,
+            "threshold": 0.78
+          },
+          {
+            "expected_cost_per_sample": 1.5871886120996441,
+            "expected_cost_total": 446.0,
+            "f1": 0.021739130434782608,
+            "threshold": 0.79
+          },
+          {
+            "expected_cost_per_sample": 1.583629893238434,
+            "expected_cost_total": 445.0,
+            "f1": 0.02197802197802198,
+            "threshold": 0.8
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.81
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.82
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.83
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.84
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.85
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.86
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.87
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.88
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.89
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.9
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.91
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.92
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.93
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.94
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.95
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.96
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.97
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.98
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.99
+          }
+        ]
+      },
+      "status": "ok",
+      "test": {
+        "at_validation_cost_threshold": {
+          "accuracy": 0.5409252669039146,
+          "expected_cost": {
+            "confusion_matrix": [
+              [
+                77,
+                114
+              ],
+              [
+                15,
+                75
+              ]
+            ],
+            "false_negatives": 15,
+            "false_positives": 114,
+            "per_sample": 0.6725978647686833,
+            "total": 189.0,
+            "true_negatives": 77,
+            "true_positives": 75
+          },
+          "f1": 0.5376344086021505,
+          "precision": 0.3968253968253968,
+          "recall": 0.8333333333333334,
+          "threshold": 0.4
+        },
+        "at_validation_f1_threshold": {
+          "accuracy": 0.5622775800711743,
+          "expected_cost": {
+            "confusion_matrix": [
+              [
+                86,
+                105
+              ],
+              [
+                18,
+                72
+              ]
+            ],
+            "false_negatives": 18,
+            "false_positives": 105,
+            "per_sample": 0.693950177935943,
+            "total": 195.0,
+            "true_negatives": 86,
+            "true_positives": 72
+          },
+          "f1": 0.5393258426966292,
+          "precision": 0.4067796610169492,
+          "recall": 0.8,
+          "threshold": 0.42
+        },
+        "pr_auc": 0.4543209377103228,
+        "roc_auc": 0.656020942408377
+      },
+      "validation": {
+        "at_f1_optimal_threshold": {
+          "accuracy": 0.5551601423487544,
+          "expected_cost": {
+            "confusion_matrix": [
+              [
+                78,
+                113
+              ],
+              [
+                12,
+                78
+              ]
+            ],
+            "false_negatives": 12,
+            "false_positives": 113,
+            "per_sample": 0.6156583629893239,
+            "total": 173.0,
+            "true_negatives": 78,
+            "true_positives": 78
+          },
+          "f1": 0.5551601423487544,
+          "precision": 0.4083769633507853,
+          "recall": 0.8666666666666667,
+          "threshold": 0.42
+        },
+        "at_selected_cost_threshold": {
+          "accuracy": 0.5160142348754448,
+          "expected_cost": {
+            "confusion_matrix": [
+              [
+                62,
+                129
+              ],
+              [
+                7,
+                83
+              ]
+            ],
+            "false_negatives": 7,
+            "false_positives": 129,
+            "per_sample": 0.5836298932384342,
+            "total": 164.0,
+            "true_negatives": 62,
+            "true_positives": 83
+          },
+          "f1": 0.5496688741721855,
+          "precision": 0.3915094339622642,
+          "recall": 0.9222222222222223,
+          "threshold": 0.4
+        },
+        "pr_auc": 0.4584002647312166,
+        "roc_auc": 0.6690517742873765
+      }
+    },
+    "xgboost": {
+      "selection": {
+        "criterion": "minimum_validation_expected_cost",
+        "f1_optimal_threshold": 0.14,
+        "selected_threshold": 0.01,
+        "validation_threshold_curve": [
+          {
+            "expected_cost_per_sample": 0.6761565836298933,
+            "expected_cost_total": 190.0,
+            "f1": 0.4864864864864865,
+            "threshold": 0.01
+          },
+          {
+            "expected_cost_per_sample": 0.6797153024911032,
+            "expected_cost_total": 191.0,
+            "f1": 0.4876712328767123,
+            "threshold": 0.02
+          },
+          {
+            "expected_cost_per_sample": 0.6832740213523132,
+            "expected_cost_total": 192.0,
+            "f1": 0.4915254237288136,
+            "threshold": 0.03
+          },
+          {
+            "expected_cost_per_sample": 0.6761565836298933,
+            "expected_cost_total": 190.0,
+            "f1": 0.49710982658959535,
+            "threshold": 0.04
+          },
+          {
+            "expected_cost_per_sample": 0.701067615658363,
+            "expected_cost_total": 197.0,
+            "f1": 0.49266862170087977,
+            "threshold": 0.05
+          },
+          {
+            "expected_cost_per_sample": 0.708185053380783,
+            "expected_cost_total": 199.0,
+            "f1": 0.49258160237388726,
+            "threshold": 0.06
+          },
+          {
+            "expected_cost_per_sample": 0.7508896797153025,
+            "expected_cost_total": 211.0,
+            "f1": 0.48338368580060426,
+            "threshold": 0.07
+          },
+          {
+            "expected_cost_per_sample": 0.7651245551601423,
+            "expected_cost_total": 215.0,
+            "f1": 0.48024316109422494,
+            "threshold": 0.08
+          },
+          {
+            "expected_cost_per_sample": 0.7473309608540926,
+            "expected_cost_total": 210.0,
+            "f1": 0.4876543209876543,
+            "threshold": 0.09
+          },
+          {
+            "expected_cost_per_sample": 0.7437722419928826,
+            "expected_cost_total": 209.0,
+            "f1": 0.4921135646687697,
+            "threshold": 0.1
+          },
+          {
+            "expected_cost_per_sample": 0.7580071174377224,
+            "expected_cost_total": 213.0,
+            "f1": 0.4919093851132686,
+            "threshold": 0.11
+          },
+          {
+            "expected_cost_per_sample": 0.7651245551601423,
+            "expected_cost_total": 215.0,
+            "f1": 0.49498327759197325,
+            "threshold": 0.12
+          },
+          {
+            "expected_cost_per_sample": 0.7437722419928826,
+            "expected_cost_total": 209.0,
+            "f1": 0.5051194539249146,
+            "threshold": 0.13
+          },
+          {
+            "expected_cost_per_sample": 0.7295373665480427,
+            "expected_cost_total": 205.0,
+            "f1": 0.5121107266435986,
+            "threshold": 0.14
+          },
+          {
+            "expected_cost_per_sample": 0.7580071174377224,
+            "expected_cost_total": 213.0,
+            "f1": 0.5052631578947369,
+            "threshold": 0.15
+          },
+          {
+            "expected_cost_per_sample": 0.8185053380782918,
+            "expected_cost_total": 230.0,
+            "f1": 0.4892086330935252,
+            "threshold": 0.16
+          },
+          {
+            "expected_cost_per_sample": 0.8647686832740213,
+            "expected_cost_total": 243.0,
+            "f1": 0.47619047619047616,
+            "threshold": 0.17
+          },
+          {
+            "expected_cost_per_sample": 0.8754448398576512,
+            "expected_cost_total": 246.0,
+            "f1": 0.4740740740740741,
+            "threshold": 0.18
+          },
+          {
+            "expected_cost_per_sample": 0.8576512455516014,
+            "expected_cost_total": 241.0,
+            "f1": 0.4830188679245283,
+            "threshold": 0.19
+          },
+          {
+            "expected_cost_per_sample": 0.8540925266903915,
+            "expected_cost_total": 240.0,
+            "f1": 0.48484848484848486,
+            "threshold": 0.2
+          },
+          {
+            "expected_cost_per_sample": 0.8647686832740213,
+            "expected_cost_total": 243.0,
+            "f1": 0.4827586206896552,
+            "threshold": 0.21
+          },
+          {
+            "expected_cost_per_sample": 0.8718861209964412,
+            "expected_cost_total": 245.0,
+            "f1": 0.48249027237354086,
+            "threshold": 0.22
+          },
+          {
+            "expected_cost_per_sample": 0.8825622775800712,
+            "expected_cost_total": 248.0,
+            "f1": 0.48031496062992124,
+            "threshold": 0.23
+          },
+          {
+            "expected_cost_per_sample": 0.8896797153024911,
+            "expected_cost_total": 250.0,
+            "f1": 0.48,
+            "threshold": 0.24
+          },
+          {
+            "expected_cost_per_sample": 0.8861209964412812,
+            "expected_cost_total": 249.0,
+            "f1": 0.4819277108433735,
+            "threshold": 0.25
+          },
+          {
+            "expected_cost_per_sample": 0.8790035587188612,
+            "expected_cost_total": 247.0,
+            "f1": 0.48582995951417,
+            "threshold": 0.26
+          },
+          {
+            "expected_cost_per_sample": 0.9039145907473309,
+            "expected_cost_total": 254.0,
+            "f1": 0.4793388429752066,
+            "threshold": 0.27
+          },
+          {
+            "expected_cost_per_sample": 0.9110320284697508,
+            "expected_cost_total": 256.0,
+            "f1": 0.4789915966386555,
+            "threshold": 0.28
+          },
+          {
+            "expected_cost_per_sample": 0.896797153024911,
+            "expected_cost_total": 252.0,
+            "f1": 0.48717948717948717,
+            "threshold": 0.29
+          },
+          {
+            "expected_cost_per_sample": 0.9288256227758007,
+            "expected_cost_total": 261.0,
+            "f1": 0.47619047619047616,
+            "threshold": 0.3
+          },
+          {
+            "expected_cost_per_sample": 0.9110320284697508,
+            "expected_cost_total": 256.0,
+            "f1": 0.48672566371681414,
+            "threshold": 0.31
+          },
+          {
+            "expected_cost_per_sample": 0.9252669039145908,
+            "expected_cost_total": 260.0,
+            "f1": 0.48214285714285715,
+            "threshold": 0.32
+          },
+          {
+            "expected_cost_per_sample": 0.9395017793594306,
+            "expected_cost_total": 264.0,
+            "f1": 0.4774774774774775,
+            "threshold": 0.33
+          },
+          {
+            "expected_cost_per_sample": 0.9288256227758007,
+            "expected_cost_total": 261.0,
+            "f1": 0.4840182648401826,
+            "threshold": 0.34
+          },
+          {
+            "expected_cost_per_sample": 0.9181494661921709,
+            "expected_cost_total": 258.0,
+            "f1": 0.49074074074074076,
+            "threshold": 0.35
+          },
+          {
+            "expected_cost_per_sample": 0.896797153024911,
+            "expected_cost_total": 252.0,
+            "f1": 0.5047619047619047,
+            "threshold": 0.36
+          },
+          {
+            "expected_cost_per_sample": 0.9039145907473309,
+            "expected_cost_total": 254.0,
+            "f1": 0.5048543689320388,
+            "threshold": 0.37
+          },
+          {
+            "expected_cost_per_sample": 0.9323843416370107,
+            "expected_cost_total": 262.0,
+            "f1": 0.49504950495049505,
+            "threshold": 0.38
+          },
+          {
+            "expected_cost_per_sample": 0.9430604982206405,
+            "expected_cost_total": 265.0,
+            "f1": 0.49246231155778897,
+            "threshold": 0.39
+          },
+          {
+            "expected_cost_per_sample": 0.9572953736654805,
+            "expected_cost_total": 269.0,
+            "f1": 0.4873096446700508,
+            "threshold": 0.4
+          },
+          {
+            "expected_cost_per_sample": 1.0,
+            "expected_cost_total": 281.0,
+            "f1": 0.4712041884816754,
+            "threshold": 0.41
+          },
+          {
+            "expected_cost_per_sample": 1.01067615658363,
+            "expected_cost_total": 284.0,
+            "f1": 0.46808510638297873,
+            "threshold": 0.42
+          },
+          {
+            "expected_cost_per_sample": 1.00355871886121,
+            "expected_cost_total": 282.0,
+            "f1": 0.4731182795698925,
+            "threshold": 0.43
+          },
+          {
+            "expected_cost_per_sample": 1.0462633451957295,
+            "expected_cost_total": 294.0,
+            "f1": 0.45555555555555555,
+            "threshold": 0.44
+          },
+          {
+            "expected_cost_per_sample": 1.0427046263345197,
+            "expected_cost_total": 293.0,
+            "f1": 0.4581005586592179,
+            "threshold": 0.45
+          },
+          {
+            "expected_cost_per_sample": 1.0391459074733096,
+            "expected_cost_total": 292.0,
+            "f1": 0.4606741573033708,
+            "threshold": 0.46
+          },
+          {
+            "expected_cost_per_sample": 1.0747330960854093,
+            "expected_cost_total": 302.0,
+            "f1": 0.4431818181818182,
+            "threshold": 0.47
+          },
+          {
+            "expected_cost_per_sample": 1.092526690391459,
+            "expected_cost_total": 307.0,
+            "f1": 0.4342857142857143,
+            "threshold": 0.48
+          },
+          {
+            "expected_cost_per_sample": 1.106761565836299,
+            "expected_cost_total": 311.0,
+            "f1": 0.4277456647398844,
+            "threshold": 0.49
+          },
+          {
+            "expected_cost_per_sample": 1.1601423487544484,
+            "expected_cost_total": 326.0,
+            "f1": 0.4,
+            "threshold": 0.5
+          },
+          {
+            "expected_cost_per_sample": 1.1530249110320285,
+            "expected_cost_total": 324.0,
+            "f1": 0.40476190476190477,
+            "threshold": 0.51
+          },
+          {
+            "expected_cost_per_sample": 1.1459074733096086,
+            "expected_cost_total": 322.0,
+            "f1": 0.40963855421686746,
+            "threshold": 0.52
+          },
+          {
+            "expected_cost_per_sample": 1.1637010676156583,
+            "expected_cost_total": 327.0,
+            "f1": 0.4,
+            "threshold": 0.53
+          },
+          {
+            "expected_cost_per_sample": 1.199288256227758,
+            "expected_cost_total": 337.0,
+            "f1": 0.3803680981595092,
+            "threshold": 0.54
+          },
+          {
+            "expected_cost_per_sample": 1.199288256227758,
+            "expected_cost_total": 337.0,
+            "f1": 0.3803680981595092,
+            "threshold": 0.55
+          },
+          {
+            "expected_cost_per_sample": 1.199288256227758,
+            "expected_cost_total": 337.0,
+            "f1": 0.3803680981595092,
+            "threshold": 0.56
+          },
+          {
+            "expected_cost_per_sample": 1.199288256227758,
+            "expected_cost_total": 337.0,
+            "f1": 0.3803680981595092,
+            "threshold": 0.57
+          },
+          {
+            "expected_cost_per_sample": 1.2135231316725978,
+            "expected_cost_total": 341.0,
+            "f1": 0.37267080745341613,
+            "threshold": 0.58
+          },
+          {
+            "expected_cost_per_sample": 1.206405693950178,
+            "expected_cost_total": 339.0,
+            "f1": 0.37735849056603776,
+            "threshold": 0.59
+          },
+          {
+            "expected_cost_per_sample": 1.2241992882562278,
+            "expected_cost_total": 344.0,
+            "f1": 0.3670886075949367,
+            "threshold": 0.6
+          },
+          {
+            "expected_cost_per_sample": 1.2562277580071175,
+            "expected_cost_total": 353.0,
+            "f1": 0.34838709677419355,
+            "threshold": 0.61
+          },
+          {
+            "expected_cost_per_sample": 1.2704626334519573,
+            "expected_cost_total": 357.0,
+            "f1": 0.33986928104575165,
+            "threshold": 0.62
+          },
+          {
+            "expected_cost_per_sample": 1.2846975088967971,
+            "expected_cost_total": 361.0,
+            "f1": 0.33112582781456956,
+            "threshold": 0.63
+          },
+          {
+            "expected_cost_per_sample": 1.291814946619217,
+            "expected_cost_total": 363.0,
+            "f1": 0.32653061224489793,
+            "threshold": 0.64
+          },
+          {
+            "expected_cost_per_sample": 1.302491103202847,
+            "expected_cost_total": 366.0,
+            "f1": 0.3194444444444444,
+            "threshold": 0.65
+          },
+          {
+            "expected_cost_per_sample": 1.298932384341637,
+            "expected_cost_total": 365.0,
+            "f1": 0.32167832167832167,
+            "threshold": 0.66
+          },
+          {
+            "expected_cost_per_sample": 1.298932384341637,
+            "expected_cost_total": 365.0,
+            "f1": 0.32167832167832167,
+            "threshold": 0.67
+          },
+          {
+            "expected_cost_per_sample": 1.291814946619217,
+            "expected_cost_total": 363.0,
+            "f1": 0.3262411347517731,
+            "threshold": 0.68
+          },
+          {
+            "expected_cost_per_sample": 1.302491103202847,
+            "expected_cost_total": 366.0,
+            "f1": 0.3188405797101449,
+            "threshold": 0.69
+          },
+          {
+            "expected_cost_per_sample": 1.295373665480427,
+            "expected_cost_total": 364.0,
+            "f1": 0.3235294117647059,
+            "threshold": 0.7
+          },
+          {
+            "expected_cost_per_sample": 1.309608540925267,
+            "expected_cost_total": 368.0,
+            "f1": 0.31343283582089554,
+            "threshold": 0.71
+          },
+          {
+            "expected_cost_per_sample": 1.3238434163701067,
+            "expected_cost_total": 372.0,
+            "f1": 0.30303030303030304,
+            "threshold": 0.72
+          },
+          {
+            "expected_cost_per_sample": 1.3380782918149465,
+            "expected_cost_total": 376.0,
+            "f1": 0.2923076923076923,
+            "threshold": 0.73
+          },
+          {
+            "expected_cost_per_sample": 1.3345195729537367,
+            "expected_cost_total": 375.0,
+            "f1": 0.29457364341085274,
+            "threshold": 0.74
+          },
+          {
+            "expected_cost_per_sample": 1.3345195729537367,
+            "expected_cost_total": 375.0,
+            "f1": 0.29457364341085274,
+            "threshold": 0.75
+          },
+          {
+            "expected_cost_per_sample": 1.3309608540925266,
+            "expected_cost_total": 374.0,
+            "f1": 0.296875,
+            "threshold": 0.76
+          },
+          {
+            "expected_cost_per_sample": 1.3665480427046264,
+            "expected_cost_total": 384.0,
+            "f1": 0.2698412698412698,
+            "threshold": 0.77
+          },
+          {
+            "expected_cost_per_sample": 1.3558718861209964,
+            "expected_cost_total": 381.0,
+            "f1": 0.2764227642276423,
+            "threshold": 0.78
+          },
+          {
+            "expected_cost_per_sample": 1.3558718861209964,
+            "expected_cost_total": 381.0,
+            "f1": 0.2764227642276423,
+            "threshold": 0.79
+          },
+          {
+            "expected_cost_per_sample": 1.3701067615658362,
+            "expected_cost_total": 385.0,
+            "f1": 0.2644628099173554,
+            "threshold": 0.8
+          },
+          {
+            "expected_cost_per_sample": 1.4199288256227758,
+            "expected_cost_total": 399.0,
+            "f1": 0.2222222222222222,
+            "threshold": 0.81
+          },
+          {
+            "expected_cost_per_sample": 1.4199288256227758,
+            "expected_cost_total": 399.0,
+            "f1": 0.2222222222222222,
+            "threshold": 0.82
+          },
+          {
+            "expected_cost_per_sample": 1.4199288256227758,
+            "expected_cost_total": 399.0,
+            "f1": 0.2222222222222222,
+            "threshold": 0.83
+          },
+          {
+            "expected_cost_per_sample": 1.4199288256227758,
+            "expected_cost_total": 399.0,
+            "f1": 0.2222222222222222,
+            "threshold": 0.84
+          },
+          {
+            "expected_cost_per_sample": 1.4270462633451957,
+            "expected_cost_total": 401.0,
+            "f1": 0.21238938053097345,
+            "threshold": 0.85
+          },
+          {
+            "expected_cost_per_sample": 1.4199288256227758,
+            "expected_cost_total": 399.0,
+            "f1": 0.21621621621621623,
+            "threshold": 0.86
+          },
+          {
+            "expected_cost_per_sample": 1.4555160142348755,
+            "expected_cost_total": 409.0,
+            "f1": 0.1834862385321101,
+            "threshold": 0.87
+          },
+          {
+            "expected_cost_per_sample": 1.4733096085409252,
+            "expected_cost_total": 414.0,
+            "f1": 0.16666666666666666,
+            "threshold": 0.88
+          },
+          {
+            "expected_cost_per_sample": 1.4697508896797153,
+            "expected_cost_total": 413.0,
+            "f1": 0.16822429906542055,
+            "threshold": 0.89
+          },
+          {
+            "expected_cost_per_sample": 1.4661921708185053,
+            "expected_cost_total": 412.0,
+            "f1": 0.16981132075471697,
+            "threshold": 0.9
+          },
+          {
+            "expected_cost_per_sample": 1.501779359430605,
+            "expected_cost_total": 422.0,
+            "f1": 0.1346153846153846,
+            "threshold": 0.91
+          },
+          {
+            "expected_cost_per_sample": 1.498220640569395,
+            "expected_cost_total": 421.0,
+            "f1": 0.13592233009708737,
+            "threshold": 0.92
+          },
+          {
+            "expected_cost_per_sample": 1.498220640569395,
+            "expected_cost_total": 421.0,
+            "f1": 0.13592233009708737,
+            "threshold": 0.93
+          },
+          {
+            "expected_cost_per_sample": 1.5338078291814947,
+            "expected_cost_total": 431.0,
+            "f1": 0.09900990099009901,
+            "threshold": 0.94
+          },
+          {
+            "expected_cost_per_sample": 1.5480427046263345,
+            "expected_cost_total": 435.0,
+            "f1": 0.08080808080808081,
+            "threshold": 0.95
+          },
+          {
+            "expected_cost_per_sample": 1.5765124555160142,
+            "expected_cost_total": 443.0,
+            "f1": 0.042105263157894736,
+            "threshold": 0.96
+          },
+          {
+            "expected_cost_per_sample": 1.5907473309608542,
+            "expected_cost_total": 447.0,
+            "f1": 0.021505376344086023,
+            "threshold": 0.97
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.98
+          },
+          {
+            "expected_cost_per_sample": 1.601423487544484,
+            "expected_cost_total": 450.0,
+            "f1": 0.0,
+            "threshold": 0.99
+          }
+        ]
+      },
+      "status": "ok",
+      "test": {
+        "at_validation_cost_threshold": {
+          "accuracy": 0.33451957295373663,
+          "expected_cost": {
+            "confusion_matrix": [
+              [
+                4,
+                187
+              ],
+              [
+                0,
+                90
+              ]
+            ],
+            "false_negatives": 0,
+            "false_positives": 187,
+            "per_sample": 0.6654804270462633,
+            "total": 187.0,
+            "true_negatives": 4,
+            "true_positives": 90
+          },
+          "f1": 0.4904632152588556,
+          "precision": 0.3249097472924188,
+          "recall": 1.0,
+          "threshold": 0.01
+        },
+        "at_validation_f1_threshold": {
+          "accuracy": 0.505338078291815,
+          "expected_cost": {
+            "confusion_matrix": [
+              [
+                71,
+                120
+              ],
+              [
+                19,
+                71
+              ]
+            ],
+            "false_negatives": 19,
+            "false_positives": 120,
+            "per_sample": 0.7651245551601423,
+            "total": 215.0,
+            "true_negatives": 71,
+            "true_positives": 71
+          },
+          "f1": 0.505338078291815,
+          "precision": 0.3717277486910995,
+          "recall": 0.7888888888888889,
+          "threshold": 0.14
+        },
+        "pr_auc": 0.461800905322225,
+        "roc_auc": 0.6317044793484584
+      },
+      "validation": {
+        "at_f1_optimal_threshold": {
+          "accuracy": 0.498220640569395,
+          "expected_cost": {
+            "confusion_matrix": [
+              [
+                66,
+                125
+              ],
+              [
+                16,
+                74
+              ]
+            ],
+            "false_negatives": 16,
+            "false_positives": 125,
+            "per_sample": 0.7295373665480427,
+            "total": 205.0,
+            "true_negatives": 66,
+            "true_positives": 74
+          },
+          "f1": 0.5121107266435986,
+          "precision": 0.37185929648241206,
+          "recall": 0.8222222222222222,
+          "threshold": 0.14
+        },
+        "at_selected_cost_threshold": {
+          "accuracy": 0.3238434163701068,
+          "expected_cost": {
+            "confusion_matrix": [
+              [
+                1,
+                190
+              ],
+              [
+                0,
+                90
+              ]
+            ],
+            "false_negatives": 0,
+            "false_positives": 190,
+            "per_sample": 0.6761565836298933,
+            "total": 190.0,
+            "true_negatives": 1,
+            "true_positives": 90
+          },
+          "f1": 0.4864864864864865,
+          "precision": 0.32142857142857145,
+          "recall": 1.0,
+          "threshold": 0.01
+        },
+        "pr_auc": 0.4236740636292521,
+        "roc_auc": 0.6175683536940082
+      }
+    }
+  },
+  "n_features": 30,
+  "n_raw_samples": 10000,
+  "n_samples": 1402,
+  "raw_feature_count": 17,
+  "reproducibility": {
+    "config_sha256": "01466e49ed46958f5e92b424b2807ee8f70852e60981bdf401a1bfb71b59f24e",
+    "package_versions": {
+      "PyYAML": "6.0.3",
+      "matplotlib": "3.11.1",
+      "numpy": "2.4.6",
+      "pandas": "3.0.5",
+      "scikit-learn": "1.9.0",
+      "xgboost": "3.2.0"
+    },
+    "python_version": "3.11.15",
+    "raw_csv_sha256": "6b62d85dd2296d729b71579426df5fbbd57352bdd0a24194a84ba5a7f5aeb71b"
+  },
+  "scale_pos_weight": 2.0996309963099633,
+  "schema_version": 1,
+  "seed": 42,
+  "selected_model": "logistic_regression",
+  "selection": {
+    "criterion": "minimum validation expected cost",
+    "rationale": "Choose the available model with the lowest validation total cost under the configured cost matrix; test scores are not used for selection.",
+    "selected_model": "logistic_regression"
+  },
+  "split_proportions": {
+    "test": 0.20042796005706134,
+    "train": 0.5991440798858774,
+    "validation": 0.20042796005706134
+  },
+  "split_sizes": {
+    "test": 281,
+    "train": 840,
+    "validation": 281
+  },
+  "threshold_grid": [
+    0.01,
+    0.02,
+    0.03,
+    0.04,
+    0.05,
+    0.06,
+    0.07,
+    0.08,
+    0.09,
+    0.1,
+    0.11,
+    0.12,
+    0.13,
+    0.14,
+    0.15,
+    0.16,
+    0.17,
+    0.18,
+    0.19,
+    0.2,
+    0.21,
+    0.22,
+    0.23,
+    0.24,
+    0.25,
+    0.26,
+    0.27,
+    0.28,
+    0.29,
+    0.3,
+    0.31,
+    0.32,
+    0.33,
+    0.34,
+    0.35,
+    0.36,
+    0.37,
+    0.38,
+    0.39,
+    0.4,
+    0.41,
+    0.42,
+    0.43,
+    0.44,
+    0.45,
+    0.46,
+    0.47,
+    0.48,
+    0.49,
+    0.5,
+    0.51,
+    0.52,
+    0.53,
+    0.54,
+    0.55,
+    0.56,
+    0.57,
+    0.58,
+    0.59,
+    0.6,
+    0.61,
+    0.62,
+    0.63,
+    0.64,
+    0.65,
+    0.66,
+    0.67,
+    0.68,
+    0.69,
+    0.7,
+    0.71,
+    0.72,
+    0.73,
+    0.74,
+    0.75,
+    0.76,
+    0.77,
+    0.78,
+    0.79,
+    0.8,
+    0.81,
+    0.82,
+    0.83,
+    0.84,
+    0.85,
+    0.86,
+    0.87,
+    0.88,
+    0.89,
+    0.9,
+    0.91,
+    0.92,
+    0.93,
+    0.94,
+    0.95,
+    0.96,
+    0.97,
+    0.98,
+    0.99
+  ]
+}
