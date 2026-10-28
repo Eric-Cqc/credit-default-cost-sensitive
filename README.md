@@ -1,4 +1,6 @@
 # Credit Default Prediction with Cost-Sensitive Model Selection
+This repo is a course study. Not a product install path — see profile Selected for current work.
+
 
 This portfolio mini-project builds a reproducible, leakage-aware credit-default workflow for an imbalanced Lending Club course subset. It emphasizes data quality, honest model comparison, validation-only score-threshold selection, and an explicit business cost matrix. It is a compact demonstration—not a state-of-the-art credit-risk system.
 
